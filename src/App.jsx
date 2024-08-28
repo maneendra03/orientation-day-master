@@ -444,7 +444,7 @@ const [sname, setsName] = useState('');
                                     <br /><br />
                                     <button
                                     style={{
-                                      color: 'black'
+                                      color: 'white'
                                     }}
                                         type="button"
                                         className="btn btn-primary"
