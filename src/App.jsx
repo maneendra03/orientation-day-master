@@ -20,7 +20,7 @@ function App() {
 
 
   const [department, setDepartment] = useState("");
-  const [register, setRegister] = useState(false)
+  const [register, setRegister] = useState(true)
   const [quota, setQuota] = useState("")
 
   const options = [
