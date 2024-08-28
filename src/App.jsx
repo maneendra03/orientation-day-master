@@ -34,13 +34,13 @@ function App() {
 
   ];
   const short = [
-    "cse",
-    "eee",
-    "ece",
-    "mec",
-    "civ",
-    "csd",
-    "csm"
+    "Computer Science & Engineering (CSE)",
+    "Electrical & Electronics Engineering (EEE)",
+    "Electronics & Communication Engineering (ECE)",
+    "Mechanical Engineering (MEC)",
+    "Civil Engineering (CIV)",
+    "Computer Science & Engineering-Data Science (CSD)",
+    "Computer Science & Engineering- AI & ML (CSM)"
   ]
 
   const _handleDepartment = (e) => {
@@ -48,6 +48,7 @@ function App() {
     var ind = 0;
     for(var i = 0 ; i < options.length ; i++){
       if(d == options[i]){
+        
         ind = i;
         break;
       }
@@ -387,14 +388,6 @@ const [sname, setsName] = useState('');
                     <br /><br />
                     <a  href={brochure} download="brochure" target='_blank' >College Brochure.pdf{' '}</a>
                     <br /><br />
-                    <button
-                        disabled={dis1 && dis2 && dis3 && dis4}
-                        type="button"
-                        className="btn btn-primary"
-                        onClick={_handleRegister}
-                    >
-                        Register
-                    </button>
                 </div>
             )}
 
