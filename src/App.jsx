@@ -20,7 +20,7 @@ function App() {
 
 
   const [department, setDepartment] = useState("");
-  const [register, setRegister] = useState(true)
+  const [register, setRegister] = useState(false);
   const [quota, setQuota] = useState("")
 
   const options = [
@@ -53,6 +53,7 @@ function App() {
       }
     }   
     setDepartment(short[ind]);
+    setRegister(true);
   };
 
 
@@ -449,6 +450,9 @@ const [sname, setsName] = useState('');
                                     />
                                     <br /><br />
                                     <button
+                                    style={{
+                                      color: 'black'
+                                    }}
                                         type="button"
                                         className="btn btn-primary"
                                         onClick={fetchStudent}
