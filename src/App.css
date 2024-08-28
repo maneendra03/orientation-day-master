@@ -1,0 +1,185 @@
+.bg {
+  animation: slide 5s ease-in-out infinite alternate;
+  background-image: linear-gradient(60deg, #000080 50%, #ADD8E6 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+a {
+  font-size: 1.5rem;
+  color: #1e4160;
+  text-decoration: inherit;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
+
+button:disabled,
+button[disabled] {
+  background-color: #3b75a8;
+  color: rgb(255, 255, 255);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  
+}
+
+button {
+  background-color: #1e4160;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.social-button {
+  padding: 5px;
+  border: transparent;
+  background-color: transparent;
+  color: #1e4160;
+  font-size: 40px;
+}
+
+.inputbox
+{
+  justify-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: larger;
+
+}
+.inp{
+
+  font-size: large;
+  border-radius: 10px;
+  text-align: center;
+  height: 200%;
+  padding: 1%;
+  
+
+}
+.drop
+{
+  align-items: center;
+  text-align: center;
+  width: 1000px;
+  height: auto;
+  
+}
+
+.drop2
+
+{
+  width: 1000px;
+  text-align: center;
+  height: auto;
+  align-items: center;
+  
+}
+.logo1
+{
+  align-items: center;
+  height: auto;
+  width: auto ;
+}
+.fill
+{
+  align-items: center;
+}
+.button1
+{
+  align-items: center;
+  left: 300px;
+}
+.contain
+{
+  margin-bottom: 800px;
+  
+  
+  
+  
+}
+/* Mobile-specific styles */
+
+/* For tablets and small devices */
+@media (max-width: 768px) {
+  .contain {
+    transform: translateY(20%); /* Adjust container position on tablets and smaller devices */
+  }
+
+  .inputbox, .inp, .drop, .drop2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .social-button {
+    font-size: 30px; /* Smaller social button icons for tablets */
+  }
+
+  .button1 {
+    left: 10px; /* Adjust position for smaller screens */
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+  a {
+    font-size: 1rem; /* Smaller font size for links on mobile phones */
+  }
+
+  button, button:disabled {
+    padding: 10px 20px; /* Smaller button padding */
+    font-size: 14px; /* Smaller button font size */
+  }
+
+  .social-button {
+    font-size: 24px; /* Smaller social button icons for phones */
+  }
+
+  .inp {
+    font-size: medium; /* Adjust input font size */
+    height: 150%; /* Adjust height of inputs */
+  }
+
+  .button1 {
+    left: 5px; /* Further adjust position for very small screens */
+  }
+
+  .contain {
+    transform: translateY(-19%);
+    
+     /* Move container further down on very small screens */
+  }
+}
